@@ -19,7 +19,7 @@ while 1:
     hsv[..., 2] = cv2.normalize(mag, None, 0, 255, cv2.NORM_MINMAX)
     rgb = cv2.cvtColor(hsv, cv2.COLOR_HSV2BGR)
 
-    cv2.imshow('frame', cv2.add(rgb, frame2))
+    cv2.imshow('Dense optical flow', cv2.add(rgb, frame2))
     k = cv2.waitKey(30) & 0xff
     if k == 27:
         break

@@ -44,7 +44,7 @@ while 1:
         frame = cv2.circle(frame, (a, b), 5, color[i].tolist(), -1)
     img = cv2.add(frame, mask)
 
-    cv2.imshow('frame', img)
+    cv2.imshow('lucas kanade optical flow', img)
     k = cv2.waitKey(30) & 0xff
     if k == 27:
         break
